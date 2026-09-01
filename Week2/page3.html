@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="page2.html">Student Table</a>
+        <a class="nav-link active" href="page3.html">Registration Form</a>
+      </nav>
+    </header>
+
+    <main class="page-shell compact-layout">
+      <section class="content-block form-section">
+        <h1>Registration Form</h1>
+
+        <form>
+          <div class="field-group">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" type="text" name="full-name" placeholder="Enter your name" />
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="name@example.com" />
+          </div>
+
+          <div class="field-group">
+            <label for="course">Course</label>
+            <select id="course" name="course">
+              <option value="">Select a course</option>
+              <option value="web">Web Development</option>
+              <option value="design">UI/UX Design</option>
+              <option value="db">Database Management</option>
+            </select>
+          </div>
+
+          <div class="button-row">
+            <button type="submit">Submit</button>
+            <button type="reset" class="secondary">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
